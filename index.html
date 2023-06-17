@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomofocus Timer</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h2>Pomofocus Timer</h2>
+    <button class="settings-btn">Настройка</button>
+  </header>
+
+  <div class="timer">
+    <h1 id="current-task">Текущая задача</h1>
+    <div id="timer" class="timer-display">25:00</div>
+    <div class="timer-buttons">
+      <button class="start-btn">Старт</button>
+      <button class="pause-btn">Пауза</button>
+      <button class="reset-btn">Сброс</button>
+    </div>
+  </div>
+
+  <div class="tasks">
+    <h2>Задачи</h2>
+    <form class="task-form">
+      <input type="text" class="task-input" placeholder="Введите задачу">
+      <button type="submit" class="add-task-btn">Добавить</button>
+    </form>
+    <ul class="task-list">
+      <!-- Здесь будут добавляться задачи -->
+    </ul>
+  </div>
+
+  <div class="overlay">
+    <div class="settings-modal">
+      <h3>Настройки</h3>
+      <div class="settings-form">
+        <label for="work-time-input">Время работы (в минутах):</label>
+        <input type="number" id="work-time-input" min="1" value="25">
+        <label for="short-break-input">Короткий перерыв (в минутах):</label>
+        <input type="number" id="short-break-input" min="1" value="5">
+        <label for="long-break-input">Длинный перерыв (в минутах):</label>
+        <input type="number" id="long-break-input" min="1" value="15">
+      </div>
+      <button class="save-btn">Сохранить</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
